@@ -191,12 +191,12 @@ public class Game{
     // difficulty intialize
     public void initialize(String difficulty){
         // EASY MODE
-        // 5 lives, 12 x 12 board, 2 treasures, 2 enemies
+        // 5 lives, 12 x 12 board, 2 treasures, 5 enemies
         if (difficulty.toLowerCase().equals("easy")) {
             size = 12;
             grid = new Grid(size);
             player = new Player(0, 0, 5);
-            enemies = new Enemy[2];
+            enemies = new Enemy[5];
             treasures = new Treasure[2];
         } 
         // MEDIUM MODE
