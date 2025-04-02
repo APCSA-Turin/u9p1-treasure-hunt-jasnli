@@ -12,7 +12,7 @@ public class Game{
 
     public Game(){ //the constructor should call initialize() and play()
         Scanner scan = new Scanner(System.in);
-        System.out.println("Choose your gamemode (easy, medium hard): ");
+        System.out.println("Choose your gamemode (easy, medium, hard): ");
         String d = scan.nextLine();
         initialize(d);
         play();
